@@ -1,0 +1,33 @@
+import java.util.*;
+
+class IDAndShip
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner in = new Scanner(System.in);
+		int t = in.nextInt();
+		while(t-- > 0){
+		    switch(in.next()){
+		        case "B":
+		        case "b":
+		            System.out.println("BattleShip");
+		            break;
+		        case "C":
+		        case "c":
+		            System.out.println("Cruiser");
+		            break;
+		        case "D":
+		        case "d":
+		            System.out.println("Destroyer");
+		            break;
+		        case "F":
+		        case "f":
+		            System.out.println("Frigate");
+		            break;
+		        default:
+		            System.out.println("Id not present");
+		        
+		    }
+		}
+	}
+}
